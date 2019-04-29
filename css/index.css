@@ -68,16 +68,18 @@ h1, h2, h3, h4, h5 {
 
 body {
 	width: 900px;
-	margin: auto;
+    margin: auto;
+    border: 1px dashed red;
 }
 header {
 	display: flex;
-	width: 100%;
+	/* width: 100%; */
 	justify-content: space-between;
-	margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
+    border: 1px dashed blue;
 }
 nav a {
-	
+    border: 1px dashed gold;
 	text-decoration: none;
 	color: #BBB;
 	margin: 5px 15px 5px 15px;
@@ -85,7 +87,8 @@ nav a {
 .top, .mid-top, .mid-bottom {
 	display: flex;
 	justify-content: space-around;
-	margin: 35px 0;
+    margin: 35px 0;
+    border: 1px dashed green;    
 }
 .top {
 	align-items: center;
@@ -110,8 +113,20 @@ footer {
 	margin: 35px;
 }
 @media (max-width: 800px) {
-
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header nav a {
+        margin: 25px;
+    }
+    header img {
+        max-width: 100%;
+        height: auto; 
+        display: block;
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 500px) {
-    
+
 }
