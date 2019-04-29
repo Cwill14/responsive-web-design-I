@@ -90,10 +90,6 @@ nav a {
 .top {
 	align-items: center;
 }
-/* .top img {
-	position: relative;
-	left: 50px;
-} */
 .top-left {
 	text-align: center;
 }
@@ -103,6 +99,9 @@ h1 {
 .middle-img {
 	width: 100%;
 }
+.mid-bottom div {
+    margin: 10px;
+}
 .contact {
 	margin: 35px 0 35px 0;
 }
@@ -110,4 +109,9 @@ footer {
 	text-align: center;
 	margin: 35px;
 }
+@media (max-width: 800px) {
 
+}
+@media (max-width: 500px) {
+    
+}
