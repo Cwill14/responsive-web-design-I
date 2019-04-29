@@ -99,6 +99,14 @@ nav a {
 h1 {
 	font-size: 350%;
 }
+#get-started {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5px 10px;
+}
+#get-started:hover {
+    background-color: #DDD;
+}
 .middle-img {
 	width: 100%;
 }
@@ -132,5 +140,17 @@ footer {
     }
 }
 @media (max-width: 500px) {
-
+    header {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        flex-flow: column;
+    }
+    header nav a {
+        border: 1px solid black;
+        margin: 0;
+        padding: 20px 500px;
+    }
 }
