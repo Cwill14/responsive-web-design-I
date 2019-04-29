@@ -69,17 +69,17 @@ h1, h2, h3, h4, h5 {
 body {
 	width: 900px;
     margin: auto;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 header {
 	display: flex;
 	/* width: 100%; */
 	justify-content: space-between;
     margin: 20px 0 20px 0;
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 nav a {
-    border: 1px dashed gold;
+    /* border: 1px dashed gold; */
 	text-decoration: none;
 	color: #BBB;
 	margin: 5px 15px 5px 15px;
@@ -88,7 +88,7 @@ nav a {
 	display: flex;
 	justify-content: space-around;
     margin: 35px 0;
-    border: 1px dashed green;    
+    /* border: 1px dashed green;     */
 }
 .top {
 	align-items: center;
@@ -110,7 +110,7 @@ h1 {
 .middle-img {
 	width: 100%;
 }
-.mid-bottom div {
+.mid-bottom div, .mid-top div {
     margin: 10px;
 }
 .contact {
@@ -152,5 +152,8 @@ footer {
         border: 1px solid black;
         margin: 0;
         padding: 20px 500px;
+    }
+    .mid-top, .mid-bottom {
+        flex-direction: column;
     }
 }
