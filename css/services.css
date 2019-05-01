@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,96 +63,109 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* My code */
 
-body {
+.body-container {
 	width: 900px;
     margin: auto;
-    /* border: 1px dashed red; */
 }
 header {
 	display: flex;
-	/* width: 100%; */
-	justify-content: space-between;
-    margin: 20px 0 20px 0;
-    /* border: 1px dashed blue; */
+	width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    /* border: 1px dashed red; */
 }
 nav a {
-    /* border: 1px dashed gold; */
+    /* border: 1px dashed blue;	 */
 	text-decoration: none;
 	color: #BBB;
-	margin: 5px 15px 5px 15px;
-}
-.top, .mid-top, .mid-bottom {
-	display: flex;
-	justify-content: space-around;
-    margin: 35px 0;
-    /* border: 1px dashed green;     */
-}
-.top {
-	align-items: center;
-}
-.top-left {
-	text-align: center;
+	margin: 0px 15px;
 }
 h1 {
-	font-size: 350%;
+    font-size: 200%;
 }
-#get-started {
+.top, .card-container, .bottom {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 900px;
+    /* border: 1px dashed green; */
+}
+.cards {
+    background-color: #EEE;
     border: 1px solid black;
-    border-radius: 5%;
-    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 35px;
+    width: 375px;
+    /* align-items:  */
 }
-#get-started:hover {
-    background-color: #DDD;
+.learn-more {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100px;
 }
-.middle-img {
-	width: 100%;
+.bottom {
+    display: flex;
 }
-.mid-bottom div, .mid-top div {
-    margin: 10px;
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
 }
-.contact {
-	margin: 35px 0 35px 0;
+ul {
+    list-style: square;
+    position: relative;
+    left: 30px;
+}
+li {
+    margin-top: 10px;
 }
 footer {
-	text-align: center;
-	margin: 35px;
+    text-align: center;
+    margin: 25px;
 }
+
+/* end */
 
 @media (max-width: 800px) {
     header {
         flex-direction: column-reverse;
-        align-items: center;
     }
-    header nav a {
-        margin: 25px;
-    }
-    header img {
-        max-width: 100%;
-        height: auto; 
-        display: block;
-        margin-bottom: 25px;
-    }
-    .top img {
-        display: none;
+    header nav {
+        margin-top: 20px;
     }
 }
 @media (max-width: 500px) {
     header {
-        flex-flow: column-reverse;
-        align-items: center;
+        flex-direction: column-reverse;
     }
     header nav {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
     }
     header nav a {
+        text-align: center;
+        padding: 15px 50px;
+        width: 500px;
         border: 1px solid black;
-        margin: 0;
-        padding: 20px 500px;
     }
-    .mid-top, .mid-bottom {
-        flex-direction: column;
+    .card-container {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .bottom img {
+        display: none;
     }
 }
